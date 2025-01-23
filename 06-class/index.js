@@ -55,5 +55,5 @@ btn.addEventListener('click', function() {
   const newPara = document.createElement('newPara');
   newPara.textContent = 'This is a new paragraph';
   paragraph.appendChild(newPara);
-});
+}); 
 
