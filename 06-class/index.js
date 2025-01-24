@@ -54,6 +54,16 @@ btn.addEventListener('click', function() {
   const myPara = document.getElementById('myPara');
   const newPara = document.createElement('newPara');
   newPara.textContent = 'This is a new paragraph';
-  paragraph.appendChild(newPara);
-}); 
+  paragraph.replaceWith(newPara);
+});
+
+//exercise 5
+const button2 = document.getElementById('addItem');
+button2.addEventListener('click', function() {
+  const list = document.getElementById('itemList');
+  const newItem = document.createElement('li');
+  newItem.textContent = 'New Item';
+  list.appendChild(newItem);
+});
+
 
